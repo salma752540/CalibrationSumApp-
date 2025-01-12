@@ -21,7 +21,7 @@ print(listes_chiffres)
 #Fonction pour combiner le premier et le dernier chiffre de chaque ligne :
 def combiner_chiffres (L):
   if len(L) >=2 :
-    return int(L[0]+ L[-1]) #convertir
+    return int(L[0]+ L[-1]) #convertir string en int 
   else :
     for n in L :
       return int(n + n)
