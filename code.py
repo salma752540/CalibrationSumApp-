@@ -17,7 +17,7 @@ def extraire_chiffres(ligne):
 listes_chiffres = [extraire_chiffres(ligne) for ligne in lines_stripped]
 print(listes_chiffres)
 #Etape 3 
-#Création d'une liste contient les chiffres combinés de chaque ligne
+#Création d'une liste contient les valeurs d'étalonnage de chaque ligne
 #Fonction pour combiner le premier et le dernier chiffre de chaque ligne :
 def combiner_chiffres (L):
   if len(L) >=2 :
@@ -26,10 +26,10 @@ def combiner_chiffres (L):
     for n in L :
       return int(n + n)
 
-chiffres_combinés = [combiner_chiffres(L) for L in listes_chiffres]
-print (chiffres_combinés)
+valeurs_etalonnage = [combiner_chiffres(L) for L in listes_chiffres]
+print (valeurs_etalonnage)
 #Finalement 
 #additionner les chiffres combinés
-somme=sum(chiffres_combinés)
-print(somme)
+somme_valeurs_etalonnage=sum(valeurs_etalonnage)
+print(somme_valeurs_etalonnage)
 #resultat_obtenu = 53386 
